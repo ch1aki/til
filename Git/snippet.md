@@ -11,3 +11,9 @@ git commit --allow-empty -m "first commit"
 ```bash
 git branch --merged | grep -v '*' | xargs git branch -d
 ```
+
+## リモートブランチを手元にチェックアウトする
+
+```bash
+git checkout -b <local-branch-name> origin/<remote-branch-name>
+```
