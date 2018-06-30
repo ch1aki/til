@@ -26,3 +26,17 @@ set PATH /usr/local/bin /usr/sbin $PATH
 ```
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 ```
+
+### 環境変数
+
+fishは`set`に`-x`/`--export`オプションをつけて実行して環境変数化する。
+
+```
+set -x GITHUB_TOKEN "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+削除は`-e`オプション。
+
+```
+set -e GITHUB_TOKEN
+```
