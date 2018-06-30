@@ -12,3 +12,17 @@ $ env HOGE="fuga" env
 (---- snip ----)
 HOGE=fuga
 ```
+
+###  $PATHの設定
+
+`~/.config/fish/config.fish`に設定する方法。
+
+```
+set PATH /usr/local/bin /usr/sbin $PATH
+```
+
+または、ユニバーサルな変数に設定する方法。(これは設定ファイルに書いてはならない...)
+
+```
+set -U fish_user_paths /usr/local/bin $fish_user_paths
+```
